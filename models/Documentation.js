@@ -20,3 +20,6 @@ const docSchema = new mongoose.Schema({
 }, {
     timestamps: true
 })
+
+const docsModel = mongoose.model('doc', docSchema);
+module.exports = docsModel;

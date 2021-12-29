@@ -4,8 +4,12 @@ let app = express();
 require('dotenv').config({path: "./config/.env"})
 require('./config/dabatase')
 
+let bodyParser = require("body-parser");
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 
-app.use('/')
+let docsRoutes = require('./routes/doc.routes')
+app.use('/docs', docsRoutes);
 
 
 app.listen(process.env.PORT, () => {
