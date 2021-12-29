@@ -65,3 +65,34 @@ module.exports.createSection = (req, res) => {
 
 
 }
+
+module.exports.delete = (req, res) => {
+
+    if (!isValidObjectId(req.params.id)) 
+        return res.status(400).send(req.params.id + " is an invalid Id");
+
+    docsModel.findByIdAndDelete(req.params.id, (err, data) => {
+        if (err) throw err
+        else return res.send(data)
+    });
+
+}
+
+module.exports.deleteSection = (req, res) => {
+
+    if (!isValidObjectId(req.params.id)) 
+        return res.status(400).send(req.params.id + " is an invalid Id");
+
+    docsModel.findByIdAndUpdate(req.params.id, 
+        {
+            $pull: {section: {
+                _id: req.params.sectionId
+            }},
+        }, {
+            new: true
+    }, (err, data) => {
+        if (err) throw err
+        else return res.send(data);
+    });
+
+}

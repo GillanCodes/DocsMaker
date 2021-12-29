@@ -26,3 +26,20 @@ a:hover {
     text-decoration: none;
     transition-duration: 100ms;
 }
+
+.page-btn {
+
+    background-color: $dark1;
+    color: $link;
+    padding: 10px;
+    border-radius: 10px;
+
+    width: fit-content;
+
+}
+
+.delete-btn {
+    background-color: rgb(255, 112, 112);
+    color: $dark1;
+    cursor: pointer;
+}

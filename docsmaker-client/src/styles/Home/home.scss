@@ -23,6 +23,13 @@
     cursor: pointer;
 }
 
+.nav-btn {
+    right: 40px;
+    bottom: 40px;
+
+    position: fixed;
+}
+
 .container {
 
    
@@ -52,6 +59,14 @@
         .right {
             margin-left: 350px;
             padding: 5em;
+
+            .page-btn {
+
+                position: fixed;
+                top: 20px;
+                right: 20px
+
+            }
 
         }
     
