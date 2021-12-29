@@ -53,9 +53,9 @@ export default function SectionAdd() {
     const handlePost = async () => {
         
         const data = {
-            title:title,
-            method:method,
-            stype:type,
+            title,
+            method,
+            type,
             content:text
         }
 
