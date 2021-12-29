@@ -44,7 +44,7 @@ module.exports.createSection = (req, res) => {
     if (!isValidObjectId(req.params.id)) 
         return res.status(400).send(req.params.id + " is an invalid Id");
 
-        const {title, method, content} = req.body;
+        const {title, method, type, content} = req.body;
 
 
     docsModel.findByIdAndUpdate(req.params.id, {
@@ -52,6 +52,7 @@ module.exports.createSection = (req, res) => {
             section: {
                 title,
                 method,
+                stype: type,
                 content
             }
         }

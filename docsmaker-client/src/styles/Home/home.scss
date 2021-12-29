@@ -1,0 +1,70 @@
+@import './dropdown.scss';
+
+.tag {
+    
+    border-radius: 5px;
+    color: $dark1;
+    padding: 2px;
+    font-size: 15px;
+    margin: 3px;
+
+    
+}
+
+.is-method {background-color: rgb(255, 123, 123);}
+
+.is-type { background-color: rgb(129, 255, 129);}
+
+.active {
+    color: $link;
+}
+
+.side-btn {
+    cursor: pointer;
+}
+
+.container {
+
+   
+    
+    .content {
+    
+        display: flex;
+        flex-wrap: nowrap;
+    
+        .left {
+            width: 350px;
+            height: 100vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background-color: $light1;
+            position: fixed;
+            text-align: center;
+
+            .sections {
+                margin-top: 7em;
+            }
+
+
+
+        }
+
+        .right {
+            margin-left: 350px;
+            padding: 5em;
+
+        }
+    
+    
+    }
+
+
+}
+
+@media screen and (max-width: 900px){
+
+    .left {
+        display: none;
+    }
+    
+}

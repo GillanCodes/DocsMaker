@@ -14,6 +14,7 @@ const docSchema = new mongoose.Schema({
         type : [{
             title: String, 
             method: String,
+            stype: String,
             content: String,
         }]
     }
