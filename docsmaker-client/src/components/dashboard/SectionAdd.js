@@ -81,13 +81,28 @@ export default function SectionAdd() {
                 <div className="content">
                    
                    
-                        <input type="text" name="title" id="title" placeholder='Title' onChange={(e) => setTitle(e.target.value)}/>
-                        <input type="text" name="method" id="method" placeholder='method' onChange={(e) => setMethod(e.target.value)}/>
-                        <input type="text" name="stype" id="stype" placeholder='Type' onChange={(e) => setType(e.target.value)}/>
+                        <input autoComplete='off' type="text" name="title" id="title" placeholder='Title'  onChange={(e) => setTitle(e.target.value)}/>
+                        <input autoComplete='off' type="text" name="method" id="method" placeholder='method' list='methods' onChange={(e) => setMethod(e.target.value)}/>
+                        <input autoComplete='off' type="text" name="stype" id="stype" placeholder='Type' list='types' onChange={(e) => setType(e.target.value)}/>
 
-                        <ReactQuill onChange={handleChange} modules={modules} theme={'snow'}></ReactQuill>
+                        <ReactQuill onChange={handleChange} modules={modules} theme={'snow'} ></ReactQuill>
 
                         <input type="submit" value="Save" onClick={handlePost}/>
+
+                        <datalist id='methods'>
+                            <option value="GET" />
+                            <option value="PUT" />
+                            <option value="PATCH" />
+                            <option value="POST" />
+                            <option value="DELETE" />
+                        </datalist>
+
+                        <datalist id='types'>
+                            <option value="ROUTE" />
+                            <option value="EVENT" />
+                            <option value="VARIABLE" />
+                        </datalist>
+
 
 
                         {!isEmpty(previous) && (

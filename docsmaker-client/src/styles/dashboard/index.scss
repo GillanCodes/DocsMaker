@@ -1,0 +1,71 @@
+.dashboard-container {
+
+    width: 50vw;
+    margin: auto;
+
+    .content {
+
+        text-align: center;
+
+        ul {
+
+            list-style: none;
+
+            li {
+                font-size: 20px;
+                margin: 20px;
+            }
+
+        }
+        
+
+
+        input[type=text] {
+            color: $link;
+            background-color: $dark1;
+            border: none;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        input[type=submit] {
+            font-size: 20px;
+            border: $dark2 solid 1px;
+            border-radius: 20px;
+            margin: 10px;
+            padding: 5px 15px ;
+            background-color: $dark2;
+            color: $link;
+            cursor: pointer;
+            
+            transition-duration: 200ms;
+        }
+
+        input[type=text]:hover {
+            color: $text-color1;
+        }
+
+        input[type=submit]:hover {
+            background-color: $dark1;
+            color: $text-color1;
+            -webkit-box-shadow: 5px 11px 23px 7px rgba(0,0,0,0.7); 
+            box-shadow: 5px 11px 23px 7px rgba(0,0,0,0.7);
+            transition-duration: 200ms;
+        }
+
+
+        .quill .ql-editor{
+            height: 80vh;
+        }
+
+        input[type=submit] {
+
+        }
+
+    }
+
+
+
+}

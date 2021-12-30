@@ -50,7 +50,13 @@ export default function DocEdit() {
                             if (id === doc._id) {
                                 
                                 return doc.section.map((sections) => {
-                                    return <li key={sections.id}>{sections.title}</li>
+                                    return (
+                                        <li key={sections.id}>
+                                            {sections.method && (<span className='tag is-method'>{sections.method}</span>)}
+                                            {sections.stype && (<span className='tag is-type'> {sections.stype}</span>)} 
+                                            {sections.title}
+                                        </li>
+                                    )
                                 })
 
                             }
