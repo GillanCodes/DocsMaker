@@ -111,7 +111,6 @@ export default function SectionAdd() {
                     
                 </div>
             )}
-            <a href="/dashboard" className="nav-btn">Dashboard</a>
         </div>
     )
 }

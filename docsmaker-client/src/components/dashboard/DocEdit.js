@@ -71,7 +71,6 @@ export default function DocEdit() {
 
                 </div>
             )}
-            <a href="/dashboard" className="nav-btn">Dashboard</a>
         </div>
     )
 }

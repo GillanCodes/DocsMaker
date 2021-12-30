@@ -36,7 +36,7 @@ export default function Dashboard() {
                 </div>
             )}
             
-            <a href="/" className="nav-btn">Home</a>
+            
         </div>
     )
 }

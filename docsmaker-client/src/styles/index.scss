@@ -28,6 +28,22 @@ a:hover {
     transition-duration: 100ms;
 }
 
+.menu {
+    bottom: 40px;
+    right: 40px;
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+
+    p{
+        margin: 10px
+    }
+}
+
 .page-btn {
 
     background-color: $dark1;

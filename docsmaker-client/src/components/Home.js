@@ -132,7 +132,6 @@ const sanitize = (input) => {
 						</div>
 					</div>
 
-					<a href="/dashboard" className="nav-btn">Dashboard</a>
 				</div>
 			)}
 		
